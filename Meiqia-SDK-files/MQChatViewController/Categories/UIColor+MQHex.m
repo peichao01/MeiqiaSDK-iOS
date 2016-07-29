@@ -10,12 +10,12 @@
 
 @implementation UIColor(MQHex)
 
-+ (UIColor *)colorWithHex:(long)hexColor
++ (UIColor *)mqColorWithHex:(long)hexColor
 {
-    return [self colorWithHex:hexColor alpha:1.0];
+    return [self mqColorWithHex:hexColor alpha:1.0];
 }
 
-+ (UIColor *)colorWithHex:(long)hexColor alpha:(CGFloat)a
++ (UIColor *)mqColorWithHex:(long)hexColor alpha:(CGFloat)a
 {
     float red = ((float)((hexColor & 0xFF0000) >> 16))/255.0;
     float green = ((float)((hexColor & 0xFF00) >> 8))/255.0;
@@ -24,15 +24,15 @@
     return [UIColor colorWithRed:red green:green blue:blue alpha:a];
 }
 
-+ (UIColor *)colorWithHexString:(NSString *)hexString {
++ (UIColor *)mqColorWithHexString:(NSString *)hexString {
     NSString *removeSharpMarkhexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
     NSScanner *scanner = [NSScanner scannerWithString:removeSharpMarkhexString];
     unsigned result = 0;
     [scanner scanHexInt:&result];
-    return [self.class colorWithHex:result];
+    return [self.class mqColorWithHex:result];
 }
 
-+ (UIColor *)getDarkerColorFromColor1:(UIColor *)color1 color2:(UIColor *)color2 {
++ (UIColor *)mqGetDarkerColorFromColor1:(UIColor *)color1 color2:(UIColor *)color2 {
     if ([color1 colorNumber] > [color2 colorNumber]) {
         return color2;
     } else {
