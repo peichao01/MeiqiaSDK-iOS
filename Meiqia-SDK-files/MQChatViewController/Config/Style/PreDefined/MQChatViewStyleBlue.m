@@ -12,17 +12,17 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.navBarColor =  [UIColor colorWithHexString:belizeHole];
-        self.navTitleColor = [UIColor colorWithHexString:gallery];
-        self.navBarTintColor = [UIColor colorWithHexString:clouds];
+        self.navBarColor =  [UIColor mqColorWithHexString:belizeHole];
+        self.navTitleColor = [UIColor mqColorWithHexString:gallery];
+        self.navBarTintColor = [UIColor mqColorWithHexString:clouds];
         
-        self.incomingBubbleColor = [UIColor colorWithHexString:dodgerBlue];
-        self.incomingMsgTextColor = [UIColor colorWithHexString:gallery];
+        self.incomingBubbleColor = [UIColor mqColorWithHexString:dodgerBlue];
+        self.incomingMsgTextColor = [UIColor mqColorWithHexString:gallery];
         
-        self.outgoingBubbleColor = [UIColor colorWithHexString:gallery];
-        self.outgoingMsgTextColor = [UIColor colorWithHexString:dodgerBlue];
+        self.outgoingBubbleColor = [UIColor mqColorWithHexString:gallery];
+        self.outgoingMsgTextColor = [UIColor mqColorWithHexString:dodgerBlue];
         
-        self.pullRefreshColor = [UIColor colorWithHexString:belizeHole];
+        self.pullRefreshColor = [UIColor mqColorWithHexString:belizeHole];
         
         self.backgroundColor = [UIColor whiteColor];
         self.statusBarStyle = UIStatusBarStyleLightContent;

@@ -12,17 +12,17 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.navBarColor =  [UIColor colorWithHexString:greenSea];
-        self.navTitleColor = [UIColor colorWithHexString:gallery];
-        self.navBarTintColor = [UIColor colorWithHexString:clouds];
+        self.navBarColor =  [UIColor mqColorWithHexString:greenSea];
+        self.navTitleColor = [UIColor mqColorWithHexString:gallery];
+        self.navBarTintColor = [UIColor mqColorWithHexString:clouds];
         
-        self.incomingBubbleColor = [UIColor colorWithHexString:turquoise];
-        self.incomingMsgTextColor = [UIColor colorWithHexString:gallery];
+        self.incomingBubbleColor = [UIColor mqColorWithHexString:turquoise];
+        self.incomingMsgTextColor = [UIColor mqColorWithHexString:gallery];
         
-        self.outgoingBubbleColor = [UIColor colorWithHexString:gallery];
-        self.outgoingMsgTextColor = [UIColor colorWithHexString:turquoise];
+        self.outgoingBubbleColor = [UIColor mqColorWithHexString:gallery];
+        self.outgoingMsgTextColor = [UIColor mqColorWithHexString:turquoise];
         
-        self.pullRefreshColor = [UIColor colorWithHexString:turquoise];
+        self.pullRefreshColor = [UIColor mqColorWithHexString:turquoise];
         
         self.backgroundColor = [UIColor whiteColor];
         
